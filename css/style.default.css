@@ -163,12 +163,12 @@ nav.navbar a.nav-link {
 
 nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
   color: #333;
-  border-top-color: #4fbfa8;
+  border-top-color: #03a9f4;
 }
 
 @media (max-width: 1199.98px) {
   nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
-    color: #4fbfa8;
+    color: #03a9f4;
   }
 }
 
@@ -428,7 +428,7 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
   background: none;
   border: none;
   cursor: pointer;
-  color: #4fbfa8;
+  color: #03a9f4;
   outline: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -441,12 +441,15 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 #filter li.active a, #filter li:hover a {
   color: #fff;
   text-decoration: none;
-  background: #4fbfa8;
+  background: #03a9f4;
 }
 
 .reference {
   margin-bottom: 30px;
   overflow: hidden;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
 }
 
 @media (max-width: 767.98px) {
@@ -471,12 +474,16 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 .reference img {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  object-fit: cover;
+  overflow: hidden;
+  width: 250px;
+  height: 200px;
 }
 
 .reference .overlay {
   background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 250px;
   position: absolute;
   top: 0;
   left: 0;
@@ -498,6 +505,10 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
   padding: 15px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 250px;
+  height: 200px;
 }
 
 .reference .overlay p {
@@ -518,6 +529,19 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
   opacity: 1;
   -webkit-transform: none;
   transform: none;
+}
+
+div.center-cropped {
+  width: 100px;
+  height: 100px;
+  overflow:hidden;
+}
+div.center-cropped img {
+  height: 100%;
+  min-width: 100%;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
 }
 
 #detail {
@@ -1438,12 +1462,12 @@ body {
 }
 
 a {
-  color: #4fbfa8;
+  color: #03a9f4;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #348e7b;
+  color: #0277bd;
   text-decoration: underline;
 }
 
